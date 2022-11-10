@@ -1,0 +1,69 @@
+# Definition of cell behavior parameters,,,
+# Cell_T=0,,,
+:,E_AJ0(0),4855.285,ng um^2 h^(-2)
+:,E_TJ0(0),0,ng um^2 h^(-2)
+:,E_cs0(0),4569.68,ng um^2 h^(-2)
+:,tau_TJ(0),0,h
+:,CadherinType(0),0,#0:E-cad 1:N-cad
+:,t_g(0),29,h
+:,N_c(0),30,
+:,Pr_q(0),0.0001,
+:,Fluc_d(0),10,%
+:,C_T_dif&Basal_AsyncDivision(0),1,
+:,C_T_dif&Basal_Decay(0),1,
+:,p_dif(0),0.01,
+:,V_m_free(0),239,um/h
+:,m_c(0),1,ng
+:,Fluc_m(0),0,%
+:,C_T_dif&Epithelium(0),1,
+# Cell_T=1,,,
+:,E_AJ0(1),2570.445,ng um^2 h^(-2)
+:,E_TJ0(1),5426.495,ng um^2 h^(-2)
+:,E_cs0(1),4569.68,ng um^2 h^(-2)
+:,tau_TJ(1),2.6,h
+:,CadherinType(1),0,#0:E-cad 1:N-cad
+:,t_deg(1),160,h
+:,k_AJ(1),0,ng um^2 h^(-3)
+:,u_AJ(1),0,um^(-1)
+:,V_m_free(1),239,um/h
+:,m_c(1),1,ng
+:,Fluc_m(1),0,%
+:,f_dead(1),2,# 0 -> CC; 1 -> CS; 2 -> CC and CS; 3 -> CC or CS;
+# Definition of culture environment parameters,,,
+:,t_total,300,h
+:,t_step,0.1,h
+:,t_init,0,h
+:,l_c,26.4,
+:,Xsize,192,
+:,Ysize,222,
+:,Zsize,12,
+:,VesselType,0,# 0 -> Square; 1 -> Circle
+:,PeriodicBoundary_X,TRUE,
+:,PeriodicBoundary_Y,TRUE,
+:,LAMBDA2,2,# LAMBDA2 = LAMBDA^2 / l_c
+:,GravitySettling,TRUE,
+# Definition of culture operation parameters,,,
+:,InitializationMethod,1,# 0 -> CSV(Input CellsData); 1 -> NEW(Initialize CellsData);
+:,Seeding_type,9,# 0 -> Random (no bias); 1 -> Random (center biased); 2 -> Uniform; 3 -> Single colony (layer); 4 -> Single colony (cell); 5 -> Multiple colony (random: mean colony size); 6 -> Multiple colony (random: inoculum size); 7 -> Multiple colony (determined); 8 -> Multiple aggregation (random); 9 -> Load cell placement; 10 -> Uniformity of cell distribution
+:,ImagePath,input_image.tif,
+:,PixelSize,2.65,um/px
+# Definition of output parameters,,,
+:,OutputStepInterval,1,
+:,Save_CellCount,TRUE,
+:,Save_HexCoordinates,TRUE,
+:,Save_CellsData_Cell_N,TRUE,
+:,Save_CellsData_Cell_S,TRUE,
+:,Save_CellsData_Cell_T,TRUE,
+:,Save_CellsData_t_age,TRUE,
+:,Save_CellsData_t_d_c,TRUE,
+:,Save_CellsData_t_m_c,TRUE,
+:,Save_CellsData_V_m_c,TRUE,
+:,Save_CellsData_E_AJ_c,TRUE,
+:,Save_CellsData_E_TJ_c,TRUE,
+:,Save_CellsData_E_cs_c,TRUE,
+:,Save_CellsData_E_max_c,TRUE,
+:,Save_CellsData_Dir_am,TRUE,
+:,Save_CellsData_Dir_pm,TRUE,
+:,Save_CellsData_Dir_pd,TRUE,
+:,Save_CellsData_THETA,TRUE,
+:,Save_CellsData_E_cc_total,TRUE,

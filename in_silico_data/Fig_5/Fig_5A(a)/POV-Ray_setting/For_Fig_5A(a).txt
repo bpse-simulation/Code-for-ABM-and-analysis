@@ -1,0 +1,57 @@
+camera {
+    perspective
+    sky <0, 0, 1>
+    location <96, 49*sqrt(3)/2, 8>
+    look_at <96, 46*sqrt(3)/2, 4>
+    right <1.33, 0, 0> // output img size 4:3
+}
+
+light_source {
+    <-100, -116*sqrt(3)/2, 100>
+    color rgb 0.5
+    parallel
+    shadowless
+}
+light_source {
+    <-100, 110*sqrt(3)/2, 100>
+    color rgb 0.5
+    parallel
+    shadowless
+}
+light_source {
+    <-100, 336*sqrt(3)/2, 100>
+    color rgb 0.5
+    parallel
+    shadowless
+}
+light_source {
+    <95, -116*sqrt(3)/2, 100>
+    color rgb 0.5
+    parallel
+    shadowless
+}  
+light_source {
+    <95, 336*sqrt(3)/2, 100>
+    color rgb 0.5
+    parallel
+    shadowless
+}
+light_source {
+    <290, -116*sqrt(3)/2, 100>
+    color rgb 0.5
+    parallel
+    shadowless
+}
+light_source {
+    <290, 110*sqrt(3)/2, 100>
+    color rgb 0.5
+    parallel
+    shadowless
+}
+light_source {
+    <290, 336*sqrt(3)/2, 100>
+    color rgb 0.5
+    parallel
+    shadowless
+}
+background { rgbt <1, 1, 1, 1> }
